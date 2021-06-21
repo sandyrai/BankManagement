@@ -8,13 +8,8 @@
  String result= (String) request.getAttribute("result");
  %>
 
-<%if(result!=null){ %> 
-<div class="alert alert-danger" role="alert">
-  <%=result%>
-</div>
-<%} %>
+
  
- <h1><%=result%></h1>
 
  
 <section class="">
@@ -22,15 +17,20 @@
  
  <div class="row">
 
-
  <div class="col-md-3"></div>
  <div class="col-md-6 card-1" style="margin-top: 30px;margin-bottom: 30px;">
  
 
 <form class="row g-3" method="POST" action="BankController">
+<%if(result!=null){ %> 
+<div class="alert alert-danger" role="alert">
+  <%=result%>
+</div>
+<%} %>
+
 <div class="col-md-6">
  <label for="FirstName" class="form-label" >First Name</label>
-  <input type="text" name="FirstName is-valid" class="form-control" id="FirstName"  onkeyup="myFunction()" required >
+  <input type="text" name="FirstName is-valid" class="form-control" id="FirstName"  onchange="myFunction()" required >
   <div class="valid-feedback">
       Looks good!
     </div>
@@ -38,7 +38,7 @@
 
 <div class="col-md-6">
  <label for="LastName" class="form-label">Last Name</label>
-    <input type="text" name="LastName" class="form-control" id="LastName" onkeyup="myFunction()" required>
+    <input type="text" name="LastName" class="form-control" id="LastName" onchange="myFunction()" required>
     <div class="invalid-feedback">
       Please enter a message in the textarea.
     </div>
@@ -50,7 +50,7 @@
 
   <div class="col-md-6">
     <label for="inputEmail4" class="form-label">Email</label>
-    <input type="email"  name="email" class="form-control" id="email1" onkeyup="myFunction()"  required>
+    <input type="email"  name="email" class="form-control" id="email1" onchange="myFunction()"  required>
     <span id="lblError" style="color: red"></span>
   </div>
   
@@ -74,7 +74,7 @@
   
   <div class="col-12">
     <label for="inputAddress" class="form-label">Address</label>
-    <textarea class="form-control"  name="address" id="address"  onkeyup="myFunction()" placeholder="e.g : 1234 Main St"  id="address" style="height: 100px" maxlength=200></textarea>
+    <textarea class="form-control"  name="address" id="address"  onchange="myFunction()" placeholder="e.g : 1234 Main St"  id="address" style="height: 100px" maxlength=200></textarea>
     
   </div>
  
