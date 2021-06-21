@@ -131,6 +131,46 @@ public class BankDao {
 		return flag;
 		
 	}
+
+
+	public boolean CustomerLoginDao(String email, String password) {
+		// TODO Auto-generated method stub
+		
+		
+		try {
+			System.out.println("customer login dao");
+			con=DatabaseUtil.getConnection();
+			String query="select EMAILID,PASSWORD from Customer where EMAILID=? and PASSWORD=? ";
+			pst=con.prepareStatement(query);
+			pst.setString(1, query);
+			pst.setString(2, password);
+			
+			rs =pst.executeQuery();
+			
+			while(rs.next()) {
+				String email1=rs.getString(1);
+				String password1=rs.getString(2);
+				
+				if((email.equals(email1)) &&  (password.equals(password1))) {
+					return true;
+				}
+				
+				
+			}
+			
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
+		finally{
+			DatabaseUtil.closeStatement(pst);
+			DatabaseUtil.closeConnection(con);
+		}
+		
+		
+		return false;
+	}
 	
 
 }

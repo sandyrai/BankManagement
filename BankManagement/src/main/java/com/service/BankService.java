@@ -88,6 +88,12 @@ public String addCustomerService(Customer c)  {
 	
 }
 
+public boolean CustomerLoginService(String email,String password) {
+	
+	System.out.println("customer login service");
+	return b.CustomerLoginDao(email,password);
+}
+
 
 
 }

@@ -108,11 +108,17 @@ public class BankController extends HttpServlet {
 			 
 		}
 		
-		else if(action.contains("customerlogin")) {
+		else if(action.equals("customerlogin")) {
 			String res="false";
 			request.setAttribute("res", res);
 			RequestDispatcher rd=request.getRequestDispatcher("CustomerLogin.jsp");
 			rd.forward(request, response);
+		}
+		else if(action.equals("CustomerAccountLogin")) {
+			System.out.println("inside controlr 123");
+			String email =request.getParameter("email");
+			String password =request.getParameter("email");
+			System.out.println(email+" "+password);;
 		}
 		
 	}
