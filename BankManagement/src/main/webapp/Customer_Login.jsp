@@ -30,18 +30,13 @@
 
 <div class="col-md-6">
  <label for="FirstName" class="form-label" >First Name</label>
-  <input type="text" name="FirstName is-valid" class="form-control" id="FirstName"  onchange="myFunction()" required >
-  <div class="valid-feedback">
-      Looks good!
-    </div>
+  <input type="text" name="FirstName"  class="form-control" id="FirstName"  onchange="myFunction()" required >
 </div>
 
 <div class="col-md-6">
  <label for="LastName" class="form-label">Last Name</label>
     <input type="text" name="LastName" class="form-control" id="LastName" onchange="myFunction()" required>
-    <div class="invalid-feedback">
-      Please enter a message in the textarea.
-    </div>
+
 </div>
 <div class="col-md-12">
     <label for="inputEmail4" class="form-label">Date Of Birth</label>
@@ -99,7 +94,7 @@
   </div>
 <input type="hidden" name="action" value="AddCustomer" />
   <div class="col-12">
-    <p style="text-align: center;"> <button type="Reset" class="btn btn-secondary" onClick="window.location.reload()">Reset</button> <button type="submit" class="btn btn-primary">Register</button> </p>
+    <p style="text-align: center;"> <button type="Reset" class="btn btn-secondary"   onClick="window.location.reload()">Reset</button> <button type="submit" class="btn btn-primary">Register</button> </p>
   </div>
 
 </form>
@@ -136,8 +131,8 @@ function myFunction() {
   FirstName.value = FirstName.value.toUpperCase();
   var LastName = document.getElementById("LastName");
   LastName.value = LastName.value.toUpperCase();
-  var email1 = document.getElementById("email1");
-  email1.value = email1.value.toUpperCase();
+/*   var email1 = document.getElementById("email1");
+  email1.value = email1.value.toUpperCase(); */
   var address = document.getElementById("address");
   address.value = address.value.toUpperCase();
  
@@ -194,6 +189,7 @@ function myFunc2(){
 		 document.getElementById("nameErr1").style.display = "none";
 	 } 
 }
+
 
 
 

@@ -19,12 +19,20 @@ commit;
 
 desc Customer; 
 
-drop table Customer;
+--drop table Customer;
 
 select * from Customer where emailid='KMR.SANDEEP@GMAIL.COM';
 
 select * from Customer;
 
-DELETE * FROM Customer;
+DELETE  FROM Customer;
+
+
+ select count(*) from Customer where EMAILID='kmr.sandeep1997@gmail.com';
+
+ select EMAILID,PASSWORD from Customer where EMAILID='kmr.sandeep1997@gmail.com' and PASSWORD='sandeep123';
+ 
+select EMAILID,PASSWORD from Customer where EMAILID='kmr.sandeep1997@gmail.com';
+ 
 
 insert into Customer(CUST_FIRSTNAME,CUST_LASTNAME,AGE,EMAILID,PHONE) values ('sandeep','kumar',13,'kmr@gmail.com',7007788055);

@@ -7,6 +7,18 @@
 <title>Insert title here</title>
 </head>
 <body>
+
+<%
+String action= (String) request.getAttribute("action1");
+%>
+
 <h1>Customer Dashboard</h1>
+
+<!-- <script>
+if ( window.history.replaceState ) {
+  window.history.replaceState( null, null, window.location.href );
+}
+</script> -->
+
 </body>
 </html>

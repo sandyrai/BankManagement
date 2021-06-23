@@ -12,25 +12,26 @@
 <div class="col-md-4"></div>
 <div class="col-md-4 card-1" >
 
-
-<form method="POST" action="BankController"  class="" style="padding: 10px;" >
-  
+ 
+ <form method="POST" action="BankController" style="padding: 10px;"  id="myForm">
+ 
   <div class="form-outline mb-4">
-   <label class="form-label" >Email address</label>
-    <input type="email" id="eamil1"  name="eamil" class="form-control" />
+   <label class="form-label" >Email </label>
+   <input type="email"  name="email" class="form-control" id="email1"  required>
   </div>
-
-  <div class="form-outline mb-4">
+ 
+   <div class="form-outline mb-4">
    <label class="form-label" >Password</label>
-    <input type="password" id="password1"  name="password" class="form-control" />
+     <input type="password" class="form-control password" name="password"  id="password" >
   </div>
-  <input type="hidden" name="action" value="CustomerAccountLogin" />
+
+  <input type="hidden" name="action" value="CustomerSignIn" /> 
   
- <p style="text-align: center;"> <button type="submit" class="btn btn-primary btn-block">Sign in</button></p>
-</form>
-
-
- <p style="text-align: center;"> Not a registered user? <a href="BankController?action=showRegistrationPage"> create account</a></p>
+  <p style="text-align: center;"> <button type="submit" class="btn btn-primary">Sign In</button> </p>
+  <p style="text-align: center;"> Not a registered user? <a href="BankController?action=showRegistrationPage"> create account</a></p>
+ </form>
+ 
+ 
 
 </div>
 <div class="col-md-4"></div>
@@ -39,7 +40,11 @@
 
 
 
-
+<script>
+function myFunction() {
+  document.getElementById("myForm").reset();
+}
+</script>
 
 
 <%if(res.equals("true")){ %>

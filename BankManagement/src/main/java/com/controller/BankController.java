@@ -34,6 +34,7 @@ public class BankController extends HttpServlet {
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
 		doPost(request,response);
+		//response.getWriter().append("Served at: ").append(request.getContextPath());
 	}
 
 	/**
@@ -43,6 +44,8 @@ public class BankController extends HttpServlet {
 		// TODO Auto-generated method
 		
 		String action =request.getParameter("action");
+		System.out.println(action);
+		if(action!=null) {
 		
 		BankService b = new BankService();
 		//String message="false";
@@ -114,13 +117,32 @@ public class BankController extends HttpServlet {
 			RequestDispatcher rd=request.getRequestDispatcher("CustomerLogin.jsp");
 			rd.forward(request, response);
 		}
-		else if(action.equals("CustomerAccountLogin")) {
+		else if(action.equals("CustomerSignIn")) {
 			System.out.println("inside controlr 123");
 			String email =request.getParameter("email");
-			String password =request.getParameter("email");
-			System.out.println(email+" "+password);;
+			
+			String password =request.getParameter("password");
+			
+			boolean flag = b.CustomerLoginService(email, password);
+			email="";
+			password="";
+			action="";
+			System.out.println(flag);
+			if(flag) {
+				//String action1 = "CustomerDashboard";
+				
+				
+				 response.sendRedirect("CustomerDashboard.jsp");
+				   
+				//RequestDispatcher rd = request.getRequestDispatcher("CustomerDashboard.jsp");
+			     
+				//rd.forward(request, response);
+			}
+			
 		}
 		
 	}
-
+		//doGet(request, response);
+		
+	}
 }
