@@ -10,7 +10,7 @@
 
 <%-- <style><%@include file="css/style.css"%></style> --%>
 
-<link href="css/style.css"  rel="stylesheet">
+<link href="css/dashboradstyle.css"  rel="stylesheet">
 <link href="css/bootstrap.min.css" rel="stylesheet">
 <link href="css/User.css"  rel="stylesheet">
 <script src="js/bootstrap.bundle.min.js"></script>
@@ -22,239 +22,278 @@
 </head>
 <body>
 
+  <ul id="slide-out" class="side-nav fixed z-depth-2">
+    <li class="center no-padding">
+      <div class="indigo darken-2 white-text" style="height: 180px;">
+        <div class="row">
+          <img style="margin-top: 5%;" width="100" height="100" src="https://res.cloudinary.com/dacg0wegv/image/upload/t_media_lib_thumb/v1463990208/photo_dkkrxc.png" class="circle responsive-img" />
 
+          <p style="margin-top: -13%;">
+            Tirth Patel
+          </p>
+        </div>
+      </div>
+    </li>
 
+    <li id="dash_dashboard"><a class="waves-effect" href="#!"><b>Dashboard</b></a></li>
 
-        <!--===================
-        Header
-        =======================-->
-        <header class="header">
-          <nav class="navbar navbar-toggleable-md navbar-light pt-0 pb-0 ">
-            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-            </button>
-            <a class="navbar-brand p-0 mr-5" href="#"><img src="http://via.placeholder.com/61x14"></a>
-            <div class="float-left"> <a href="#" class="button-left"><span class="fa fa-fw fa-bars "></span></a> </div>
-            <div class="collapse navbar-collapse flex-row-reverse" id="navbarNavDropdown">
-              <ul class="navbar-nav">
-                <li class="nav-item dropdown messages-menu">
-                  <a class="nav-link dropdown-toggle" href="http://example.com" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    <i class="fa fa-bell-o"></i>
-                    <span class="label label-success bg-success">10</span>
-                  </a>
-                  <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                    <ul class="dropdown-menu-over list-unstyled">
-                      <li class="header-ul text-center">You have 4 messages</li>
-                      <li>
-                        <!-- inner menu: contains the actual data -->
-                        <ul class="menu list-unstyled">
-                          <li><!-- start message -->
-                          <a href="#">
-                            <div class="pull-left">
-                              <img src="http://via.placeholder.com/160x160" class="rounded-circle  " alt="User Image">
-                            </div>
-                            <h4>
-                            Support Team
-                            <small><i class="fa fa-clock-o"></i> 5 mins</small>
-                            </h4>
-                            <p>Why not buy a new awesome theme?</p>
-                          </a>
-                        </li>
-                        <!-- end message -->
-                        <li>
-                          <a href="#">
-                            <div class="pull-left">
-                              <img src="http://via.placeholder.com/160x160" class="rounded-circle " alt="User Image">
-                            </div>
-                            <h4>
-                            AdminLTE Design Team
-                            <small><i class="fa fa-clock-o"></i> 2 hours</small>
-                            </h4>
-                            <p>Why not buy a new awesome theme?</p>
-                          </a>
-                        </li>
-                        <li>
-                          <a href="#">
-                            <div class="pull-left">
-                              <img src="http://via.placeholder.com/160x160" class="rounded-circle " alt="User Image">
-                            </div>
-                            <h4>
-                            Developers
-                            <small><i class="fa fa-clock-o"></i> Today</small>
-                            </h4>
-                            <p>Why not buy a new awesome theme?</p>
-                          </a>
-                        </li>
-                        <li>
-                          <a href="#">
-                            <div class="pull-left">
-                              <img src="http://via.placeholder.com/160x160" class="rounded-circle " alt="User Image">
-                            </div>
-                            <h4>
-                            Sales Department
-                            <small><i class="fa fa-clock-o"></i> Yesterday</small>
-                            </h4>
-                            <p>Why not buy a new awesome theme?</p>
-                          </a>
-                        </li>
-                        <li>
-                          <a href="#">
-                            <div class="pull-left">
-                              <img src="http://via.placeholder.com/160x160" class="rounded-circle " alt="User Image">
-                            </div>
-                            <h4>
-                            Reviewers
-                            <small><i class="fa fa-clock-o"></i> 2 days</small>
-                            </h4>
-                            <p>Why not buy a new awesome theme?</p>
-                          </a>
-                        </li>
-                      </ul>
-                    </li>
-                    <li class="footer-ul text-center"><a href="#">See All Messages</a></li>
-                  </ul>
-                </div>
-              </li>
-              <li class="nav-item dropdown notifications-menu">
-                <a class="nav-link dropdown-toggle" href="http://example.com" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                  <i class="fa fa-envelope-o"></i>
-                  <span class="label label-warning bg-warning">10</span>
-                </a>
-                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                  <ul class="dropdown-menu-over list-unstyled">
-                    <li class="header-ul text-center">You have 10 notifications</li>
-                    <li>
-                      <!-- inner menu: contains the actual data -->
-                      <ul class="menu list-unstyled">
-                        <li>
-                          <a href="#">
-                            <i class="fa fa-users text-aqua"></i> 5 new members joined today
-                          </a>
-                        </li>
-                        <li>
-                          <a href="#">
-                            <i class="fa fa-warning text-yellow"></i> Very long description here that may not fit into the
-                            page and may cause design problems
-                          </a>
-                        </li>
-                        <li>
-                          <a href="#">
-                            <i class="fa fa-users text-red"></i> 5 new members joined
-                          </a>
-                        </li>
-                        <li>
-                          <a href="#">
-                            <i class="fa fa-shopping-cart text-green"></i> 25 sales made
-                          </a>
-                        </li>
-                        <li>
-                          <a href="#">
-                            <i class="fa fa-user text-red"></i> You changed your username
-                          </a>
-                        </li>
-                      </ul>
-                    </li>
-                    <li class="footer-ul text-center"><a href="#">View all</a></li>
-                  </ul>
-                </div>
-              </li>
-              
-              <li class="nav-item dropdown  user-menu">
-                <a class="nav-link dropdown-toggle" href="http://example.com" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                  <img src="http://via.placeholder.com/160x160" class="user-image" alt="User Image" >
-                  <span class="hidden-xs">bootstrap develop</span>
-                </a>
-                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                  <a class="dropdown-item" href="#">Action</a>
-                  <a class="dropdown-item" href="#">Another action</a>
-                  <a class="dropdown-item" href="#">Something else here</a>
-                </div>
-              </li>
-            </ul>
-          </div>
-        </nav>
-      </header>
-      <div class="main">
-        <aside>
-          <div class="sidebar left ">
-            <div class="user-panel">
-              <div class="pull-left image">
-                <img src="http://via.placeholder.com/160x160" class="rounded-circle" alt="User Image">
-              </div>
-              <div class="pull-left info">
-                <p>bootstrap develop</p>
-                <a href="#"><i class="fa fa-circle text-success"></i> Online</a>
-              </div>
-            </div>
-            <ul class="list-sidebar bg-defoult">
-              <li> <a href="#" data-toggle="collapse" data-target="#dashboard" class="collapsed active" > <i class="fa fa-th-large"></i> <span class="nav-label"> Dashboards </span> <span class="fa fa-chevron-left pull-right"></span> </a>
-              <ul class="sub-menu collapse" id="dashboard">
-                <li class="active"><a href="#">CSS3 Animation</a></li>
-                <li><a href="#">General</a></li>
-                <li><a href="#">Buttons</a></li>
-                <li><a href="#">Tabs & Accordions</a></li>
-                <li><a href="#">Typography</a></li>
-                <li><a href="#">FontAwesome</a></li>
-                <li><a href="#">Slider</a></li>
-                <li><a href="#">Panels</a></li>
-                <li><a href="#">Widgets</a></li>
-                <li><a href="#">Bootstrap Model</a></li>
-              </ul>
+    <ul class="collapsible" data-collapsible="accordion">
+      <li id="dash_users">
+        <div id="dash_users_header" class="collapsible-header waves-effect"><b>Users</b></div>
+        <div id="dash_users_body" class="collapsible-body">
+          <ul>
+            <li id="users_seller">
+              <a class="waves-effect" style="text-decoration: none;" href="#!">Seller</a>
             </li>
-            <li> <a href="#"><i class="fa fa-diamond"></i> <span class="nav-label">Layouts</span></a> </li>
-            <li> <a href="#" data-toggle="collapse" data-target="#products" class="collapsed active" > <i class="fa fa-bar-chart-o"></i> <span class="nav-label">Graphs</span> <span class="fa fa-chevron-left pull-right"></span> </a>
-            <ul class="sub-menu collapse" id="products">
-              <li class="active"><a href="#">CSS3 Animation</a></li>
-              <li><a href="#">General</a></li>
-              <li><a href="#">Buttons</a></li>
-              <li><a href="#">Tabs & Accordions</a></li>
-              <li><a href="#">Typography</a></li>
-              <li><a href="#">FontAwesome</a></li>
-              <li><a href="#">Slider</a></li>
-              <li><a href="#">Panels</a></li>
-              <li><a href="#">Widgets</a></li>
-              <li><a href="#">Bootstrap Model</a></li>
-            </ul>
-          </li>
-          <li> <a href="#"><i class="fa fa-laptop"></i> <span class="nav-label">Grid options</span></a> </li>
-          <li> <a href="#" data-toggle="collapse" data-target="#tables" class="collapsed active" ><i class="fa fa-table"></i> <span class="nav-label">Tables</span><span class="fa fa-chevron-left pull-right"></span></a>
-          <ul  class="sub-menu collapse" id="tables" >
-            <li><a href=""> Static Tables</a></li>
-            <li><a href=""> Data Tables</a></li>
-            <li><a href=""> Foo Tables</a></li>
-            <li><a href=""> jqGrid</a></li>
+
+            <li id="users_customer">
+              <a class="waves-effect" style="text-decoration: none;" href="#!">Customer</a>
+            </li>
           </ul>
-        </li>
-        <li> <a href="#" data-toggle="collapse" data-target="#e-commerce" class="collapsed active" ><i class="fa fa-shopping-cart"></i> <span class="nav-label">E-commerce</span><span class="fa fa-chevron-left pull-right"></span></a>
-        <ul  class="sub-menu collapse" id="e-commerce" >
-          <li><a href=""> Products grid</a></li>
-          <li><a href=""> Products list</a></li>
-          <li><a href="">Product edit</a></li>
-          <li><a href=""> Product detail</a></li>
-          <li><a href="">Cart</a></li>
-          <li><a href=""> Orders</a></li>
-          <li><a href=""> Credit Card form</a> </li>
-        </ul>
+        </div>
       </li>
-      <li> <a href=""><i class="fa fa-pie-chart"></i> <span class="nav-label">Metrics</span> </a></li>
-      <li> <a href="#"><i class="fa fa-files-o"></i> <span class="nav-label">Other Pages</span></a> </li>
-      <li> <a href="#"><i class="fa fa-files-o"></i> <span class="nav-label">Other Pages</span></a> </li>
-      <li> <a href="#"><i class="fa fa-files-o"></i> <span class="nav-label">Other Pages</span></a> </li>
-      <li> <a href="#"><i class="fa fa-files-o"></i> <span class="nav-label">Other Pages</span></a> </li>
-      <li> <a href="#"><i class="fa fa-files-o"></i> <span class="nav-label">Other Pages</span></a> </li>
+
+      <li id="dash_products">
+        <div id="dash_products_header" class="collapsible-header waves-effect"><b>Products</b></div>
+        <div id="dash_products_body" class="collapsible-body">
+          <ul>
+            <li id="products_product">
+              <a class="waves-effect" style="text-decoration: none;" href="#!">Products</a>
+              <a class="waves-effect" style="text-decoration: none;" href="#!">Orders</a>
+            </li>
+          </ul>
+        </div>
+      </li>
+
+      <li id="dash_categories">
+        <div id="dash_categories_header" class="collapsible-header waves-effect"><b>Categories</b></div>
+        <div id="dash_categories_body" class="collapsible-body">
+          <ul>
+            <li id="categories_category">
+              <a class="waves-effect" style="text-decoration: none;" href="#!">Category</a>
+            </li>
+
+            <li id="categories_sub_category">
+              <a class="waves-effect" style="text-decoration: none;" href="#!">Sub Category</a>
+            </li>
+          </ul>
+        </div>
+      </li>
+
+      <li id="dash_brands">
+        <div id="dash_brands_header" class="collapsible-header waves-effect"><b>Brands</b></div>
+        <div id="dash_brands_body" class="collapsible-body">
+          <ul>
+            <li id="brands_brand">
+              <a class="waves-effect" style="text-decoration: none;" href="#!">Brand</a>
+            </li>
+
+            <li id="brands_sub_brand">
+              <a class="waves-effect" style="text-decoration: none;" href="#!">Sub Brand</a>
+            </li>
+          </ul>
+        </div>
+      </li>
     </ul>
-    </div>
-    </aside>
+  </ul>
+
+  <header>
+    <ul class="dropdown-content" id="user_dropdown">
+      <li><a class="indigo-text" href="#!">Profile</a></li>
+      <li><a class="indigo-text" href="#!">Logout</a></li>
+    </ul>
+
+    <nav class="indigo" role="navigation">
+      <div class="nav-wrapper">
+        <a data-activates="slide-out" class="button-collapse show-on-" href="#!"><img style="margin-top: 17px; margin-left: 5px;" src="https://res.cloudinary.com/dacg0wegv/image/upload/t_media_lib_thumb/v1463989873/smaller-main-logo_3_bm40iv.gif" /></a>
+
+        <ul class="right hide-on-med-and-down">
+          <li>
+            <a class='right dropdown-button' href='' data-activates='user_dropdown'><i class=' material-icons'>account_circle</i></a>
+          </li>
+        </ul>
+
+        <a href="#" data-activates="slide-out" class="button-collapse"><i class="mdi-navigation-menu"></i></a>
+      </div>
+    </nav>
+
+    <nav>
+      <div class="nav-wrapper indigo darken-2">
+        <a style="margin-left: 20px;" class="breadcrumb" href="#!">Admin</a>
+        <a class="breadcrumb" href="#!">Index</a>
+
+        <div style="margin-right: 20px;" id="timestamp" class="right"></div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <div class="row">
+      <div class="col s6">
+        <div style="padding: 35px;" align="center" class="card">
+          <div class="row">
+            <div class="left card-title">
+              <b>User Management</b>
+            </div>
+          </div>
+
+          <div class="row">
+            <a href="#!">
+              <div style="padding: 30px;" class="grey lighten-3 col s5 waves-effect">
+                <i class="indigo-text text-lighten-1 large material-icons">person</i>
+                <span class="indigo-text text-lighten-1"><h5>Seller</h5></span>
+              </div>
+            </a>
+            <div class="col s1">&nbsp;</div>
+            <div class="col s1">&nbsp;</div>
+
+            <a href="#!">
+              <div style="padding: 30px;" class="grey lighten-3 col s5 waves-effect">
+                <i class="indigo-text text-lighten-1 large material-icons">people</i>
+                <span class="indigo-text text-lighten-1"><h5>Customer</h5></span>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col s6">
+        <div style="padding: 35px;" align="center" class="card">
+          <div class="row">
+            <div class="left card-title">
+              <b>Product Management</b>
+            </div>
+          </div>
+          <div class="row">
+            <a href="#!">
+              <div style="padding: 30px;" class="grey lighten-3 col s5 waves-effect">
+                <i class="indigo-text text-lighten-1 large material-icons">store</i>
+                <span class="indigo-text text-lighten-1"><h5>Product</h5></span>
+              </div>
+            </a>
+
+            <div class="col s1">&nbsp;</div>
+            <div class="col s1">&nbsp;</div>
+
+            <a href="#!">
+              <div style="padding: 30px;" class="grey lighten-3 col s5 waves-effect">
+                <i class="indigo-text text-lighten-1 large material-icons">assignment</i>
+                <span class="indigo-text text-lighten-1"><h5>Orders</h5></span>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
     </div>
 
-<script>
-$(document).ready(function(){
-	   $('.button-left').click(function(){
-	       $('.sidebar').toggleClass('fliph');
-	   });
-	     
-	});
-</script>
+    <div class="row">
+      <div class="col s6">
+        <div style="padding: 35px;" align="center" class="card">
+          <div class="row">
+            <div class="left card-title">
+              <b>Brand Management</b>
+            </div>
+          </div>
 
+          <div class="row">
+            <a href="#!">
+              <div style="padding: 30px;" class="grey lighten-3 col s5 waves-effect">
+                <i class="indigo-text text-lighten-1 large material-icons">local_offer</i>
+                <span class="indigo-text text-lighten-1"><h5>Brand</h5></span>
+              </div>
+            </a>
+
+            <div class="col s1">&nbsp;</div>
+            <div class="col s1">&nbsp;</div>
+
+            <a href="#!">
+              <div style="padding: 30px;" class="grey lighten-3 col s5 waves-effect">
+                <i class="indigo-text text-lighten-1 large material-icons">loyalty</i>
+                <span class="indigo-text text-lighten-1"><h5>Sub Brand</h5></span>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col s6">
+        <div style="padding: 35px;" align="center" class="card">
+          <div class="row">
+            <div class="left card-title">
+              <b>Category Management</b>
+            </div>
+          </div>
+          <div class="row">
+            <a href="#!">
+              <div style="padding: 30px;" class="grey lighten-3 col s5 waves-effect">
+                <i class="indigo-text text-lighten-1 large material-icons">view_list</i>
+                <span class="indigo-text text-lighten-1"><h5>Category</h5></span>
+              </div>
+            </a>
+            <div class="col s1">&nbsp;</div>
+            <div class="col s1">&nbsp;</div>
+
+            <a href="#!">
+              <div style="padding: 30px;" class="grey lighten-3 col s5 waves-effect">
+                <i class="indigo-text text-lighten-1 large material-icons">view_list</i>
+                <span class="truncate indigo-text text-lighten-1"><h5>Sub Category</h5></span>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="fixed-action-btn click-to-toggle" style="bottom: 45px; right: 24px;">
+      <a class="btn-floating btn-large pink waves-effect waves-light">
+        <i class="large material-icons">add</i>
+      </a>
+
+      <ul>
+        <li>
+          <a class="btn-floating red"><i class="material-icons">note_add</i></a>
+          <a href="" class="btn-floating fab-tip">Add a note</a>
+        </li>
+
+        <li>
+          <a class="btn-floating yellow darken-1"><i class="material-icons">add_a_photo</i></a>
+          <a href="" class="btn-floating fab-tip">Add a photo</a>
+        </li>
+
+        <li>
+          <a class="btn-floating green"><i class="material-icons">alarm_add</i></a>
+          <a href="" class="btn-floating fab-tip">Add an alarm</a>
+        </li>
+
+        <li>
+          <a class="btn-floating blue"><i class="material-icons">vpn_key</i></a>
+          <a href="" class="btn-floating fab-tip">Add a master password</a>
+        </li>
+      </ul>
+    </div>
+  </main>
+
+  <footer class="indigo page-footer">
+    <div class="container">
+      <div class="row">
+        <div class="col s12">
+          <h5 class="white-text">Icon Credits</h5>
+          <ul id='credits'>
+            <li>
+              Gif Logo made using <a href="https://formtypemaker.appspot.com/" title="Form Type Maker">Form Type Maker</a> from <a href="https://github.com/romannurik/FORMTypeMaker" title="romannurik">romannurik</a>
+            </li>
+            <li>
+              Icons made by <a href="https://material.io/icons/">Google</a>, available under <a href="https://www.apache.org/licenses/LICENSE-2.0" target="_blank">Apache License Version 2.0</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright">
+      <div class="container">
+         <span>Made By <a style='font-weight: bold;' href="https://github.com/piedcipher" target="_blank">Tirth Patel</a></span>
+      </div>
+    </div>
+  </footer>
 </body>
 </html>
