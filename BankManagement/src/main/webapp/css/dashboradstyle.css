@@ -1,44 +1,31 @@
-@charset "ISO-8859-1";
-
-header,
-main,
-footer {
-  padding-left: 240px;
+#morris-bar-chart {
+  -webkit-transition: all 2s; /* Safari */
+  transition: all 2s;
 }
 
-body {
-  backgroud: white;
+#morris-table-left-div {
+  /*height: 350px;
+  overflow: hidden;*/
 }
-
-@media only screen and (max-width: 992px) {
-  header,
-  main,
-  footer {
-    padding-left: 0;
-  }
+.header-row {
+  padding: 0 18px;
 }
-
-#credits li,
-#credits li a {
-  color: white;
+.header-column {
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  display: inline-block;
+  font-weight: 300;
+  color: #555;
+  /*border: 1px solid grey;*/
+  padding: 0px;
+  width: 24%;
+  box-sizing: border-box; /*content-box|border-box|initial|inherit;*/
 }
-
-#credits li a {
-  font-weight: bold;
-}
-
-.footer-copyright .container,
-.footer-copyright .container a {
-  color: #BCC2E2;
-}
-
-.fab-tip {
-  position: fixed;
-  right: 85px;
-  padding: 0px 0.5rem;
-  text-align: right;
-  background-color: #323232;
-  border-radius: 2px;
-  color: #FFF;
-  width: auto;
+.list-group-column {
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  display: inline-block;
+  font-weight: 300;
+  color: #555;
+  /*border: 1px solid grey;*/
+  padding: 0px;
+  width: 24%;
 }
